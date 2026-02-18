@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Management Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h1>Portfolio Panel</h1>
+        <p class="muted">Admin workspace</p>
+        <nav id="nav"></nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <h2 id="page-title">Dashboard</h2>
+          <button id="theme-toggle" class="btn secondary">Toggle Theme</button>
+        </header>
+        <section id="view"></section>
+      </main>
+    </div>
+
+    <template id="metric-card-template">
+      <article class="card metric-card">
+        <p class="metric-label"></p>
+        <h3 class="metric-value"></h3>
+        <p class="metric-subtext muted"></p>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
